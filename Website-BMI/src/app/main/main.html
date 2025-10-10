@@ -1,5 +1,23 @@
-<input type="text" [(ngModel)]="height" placeholder="Wzrost w metrach (np: 1.80)">
-<input type="text" [(ngModel)]="weight" placeholder="Waga w Kg">
-<button (click)="bmi()">Kliknij</button>
-<p>{{view}}</p>
-<p>{{answer}}</p>
+<main>
+    <div>
+        <div class="container-fluid overflow-hidden justify-content-center text-center">
+            <div class="mt-5 mb-2 p-5 border border-black">
+                <div>
+                    <label for="height">Wzrost w metrach (np: 1.80):</label><br>
+                    <input type="text" id="height" [(ngModel)]="height">
+                </div><br>
+                <div>
+                    <label for="weight">Waga w Kg:</label><br>
+                    <input type="text" id="weight" [(ngModel)]="weight">
+                </div><br>
+                <button class="btn btn-outline-dark" (click)="bmi()">Wylicz</button>
+            </div><br>
+            <div class="mt2 mb-5 p-5 border border-black">
+                <p class="h2">Wynik:</p>
+                <p>{{view}}</p>
+                <p>{{answer}}</p>
+            </div>
+        </div>
+    </div>
+</main>
+

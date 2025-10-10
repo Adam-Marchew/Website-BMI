@@ -9,11 +9,11 @@ import {FormsModule} from '@angular/forms';
 })
 export class Main {
 
- height:number | null = null;
- weight:number | null = null;
- result:number = 0;
- view:number = 0;
- answer:String = '';
+  height:number | null = null;
+  weight:number | null = null;
+  result:number | null = null;
+  view:number | null = null;
+  answer:String = '';
 
   bmi(): void{
     
